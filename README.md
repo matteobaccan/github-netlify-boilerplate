@@ -1,2 +1,2 @@
-# github-netlify-boilerplate
+# Github -> netlify boilerplate
 Esempioi di pubblicazione da GitHub a Netlify
