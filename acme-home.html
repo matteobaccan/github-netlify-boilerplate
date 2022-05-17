@@ -10,28 +10,30 @@
   <div
     style="position:fixed; margin:0px; height:62px; background-color:black; width:100%; color:white; border-bottom:1px solid red;">
     <a href="#" onclick="mobile();" style="color:red;">Mobile</a>
-    &nbsp;*&nbsp;<a href="#" onclick="pc();" style="color:red;">PC</a>
+    &nbsp;-&nbsp;
+    <a href="#" onclick="pc();" style="color:red;">PC</a>
   </div>
 
   <div
     style="position:fixed; top:100px;  margin:0px; height:62px; background-color:black; width:100%; color:white; border-bottom:1px solid red;">
-    test 3</div>
+    Intestazione sito</div>
 
   <div id="mainBody">
 
-  <div style="border:1px solid black; position:fixed; bottom:10px; right:10px; width:40px; border-radius:90px;">TOP
-  </div>
+    <div style="border:1px solid black; position:fixed; bottom:10px; right:10px; width:40px; border-radius:90px;">TOP
+    </div>
 
-  <div style="height:180px;"></div>
+    <div style="height:180px;"></div>
 
-  <div style="border:1px solid black; max-width: 1200px; margin: auto; background-color: orange;border-radius: 20px;">
-    <h1>OPEN DAY ONLINE</h1>
-    <p>Tutte le informazioni per conoscere l'Accademia di Belle Arti ACME</p>
-  </div>
+    <div style="border:1px solid black; max-width: 1200px; margin: auto; background-color: orange;border-radius: 20px;">
+      <h1>OPEN DAY ONLINE</h1>
+      <p>Tutte le informazioni per conoscere l'Accademia di Belle Arti ACME</p>
+    </div>
 
-  <div style="border:1px solid white; max-width: 1200px; margin: auto; background-color: black; color: white;">
-    <h1>OPEN DAY ONLINE</h1>
-    <p>Tutte le informazioni per conoscere l'Accademia di Belle Arti ACME</p>
+    <div style="border:1px solid white; max-width: 1200px; margin: auto; background-color: black; color: white;">
+      <h1>OPEN DAY ONLINE</h1>
+      <p>Tutte le informazioni per conoscere l'Accademia di Belle Arti ACME</p>
+    </div>
   </div>
 
   <!--
@@ -43,17 +45,17 @@
   <div style="border:1px solid red; position:absolute; top:150px; left:10px; width:300px;">test 4</div>
 -->
 </body>
-  <script>
-    function mobile() {
-      var mainBody = document.getElementById('mainBody');
-      mainBody.setAttribute('style', 'margin:auto; width:500px;');
-    }
+<script>
+  function mobile() {
+    var mainBody = document.getElementById('mainBody');
+    mainBody.setAttribute('style', 'margin:auto; width:500px;');
+  }
 
-    function pc() {
-      var mainBody = document.getElementById('mainBody');
-      mainBody.setAttribute('style', 'margin:auto; width:100%;');
-    }
-  </script>
+  function pc() {
+    var mainBody = document.getElementById('mainBody');
+    mainBody.setAttribute('style', 'margin:auto; width:100%;');
+  }
+</script>
 </body>
 
 </html>
