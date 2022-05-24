@@ -20,7 +20,7 @@
 
   <div id="mainBody">
 
-    <div style="border:1px solid black; position:fixed; bottom:10px; right:10px; width:40px; border-radius:90px;">TOP
+    <div style="border:1px solid black; position:fixed; bottom:10px; right:10px; width:40px; border-radius:90px;" onclick="scrollToTop()">TOP
     </div>
 
     <div style="height:180px;"></div>
@@ -114,6 +114,9 @@
   function pc() {
     var mainBody = document.getElementById('mainBody');
     mainBody.setAttribute('style', 'margin:auto; width:100%;');
+  }
+  function scrollToTop() {
+     window.scrollTo(0, 0);
   }
 </script>
 </body>
