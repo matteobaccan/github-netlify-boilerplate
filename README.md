@@ -13,4 +13,6 @@ Materiale in italiano propedeutico alla realizzazione del corso di WebDesign per
 
 [GTMetrix](https://gtmetrix.com/reports/github-netlify-boilerplate.netlify.app/6oLETqoh/)
 
+[Seoptimer](https://www.seoptimer.com/github-netlify-boilerplate.netlify.app)
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/70026311-956c-41d1-819d-633391ab5ff2/deploy-status)](https://app.netlify.com/sites/github-netlify-boilerplate/deploys)
