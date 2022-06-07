@@ -18,6 +18,6 @@ Materiale in italiano propedeutico alla realizzazione del corso di WebDesign per
 [Seoptimer](https://www.seoptimer.com/github-netlify-boilerplate.netlify.app)
 
 # Test responsive
-[Responsivedesignchecker](https://responsivedesignchecker.com/](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fgithub-netlify-boilerplate.netlify.app%2Facme-home.html&width=1400&height=700)
+[Responsivedesignchecker](https://responsivedesignchecker.com/checker.php?url=https%3A%2F%2Fgithub-netlify-boilerplate.netlify.app%2Facme-home.html&width=1400&height=700)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/70026311-956c-41d1-819d-633391ab5ff2/deploy-status)](https://app.netlify.com/sites/github-netlify-boilerplate/deploys)
