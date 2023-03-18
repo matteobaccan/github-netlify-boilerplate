@@ -1,95 +1,69 @@
 <!DOCTYPE html>
 <html lang="it">
-<!-- ChatGPT: mi puoi creare un nav responsive in html5, con posizionamento fisso nel top della pagina e un'icona per l'apertura e chiusura del menu -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nav responsive</title>
+    <title>Footer sticky</title>
     <style>
-        /* Wrapper */
-        .wrapper {
+        body {
             min-height: 100vh;
-            display: flex;
-            flex-direction: column;
+            margin: 0;
+
+            display: grid;
+            grid-template-rows: auto 1fr auto;
         }
 
-        /* Main content */
-        main {
-            flex-grow: 1;
+        header {
+            min-height: 50px;
+            background: lightcyan;
         }
 
-        /* Footer */
         footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            position: sticky;
-            bottom: 0;
-        }
-
-        /* Media queries */
-        @media (max-width: 768px) {
-
-            /* Footer */
-            footer {
-                font-size: 14px;
-            }
+            min-height: 50px;
+            background: PapayaWhip;
         }
     </style>
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>
-            <!-- Header content -->
-            head
-        </header>
-        <main>
-            <!-- Main content -->
-            first<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            line<br />
-            last
-        </main>
+    <header>Header</header>
+    <div>
+        first<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        Content<br/>
+        last
     </div>
-    <footer>
-        <!-- Footer content -->
-        foot
-    </footer>
+    <footer>Footer</footer>
 </body>
-
 
 </html>
