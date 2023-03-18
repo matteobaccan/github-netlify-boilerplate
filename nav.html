@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<!-- ChatGPT: mi puoi creare un nav responsive in html5 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav responsive</title>
+    <style>
+        /* Stili per il nav bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        /* Stili per il toggle */
+        .navbar-toggle {
+            display: none;
+            cursor: pointer;
+        }
+
+        .navbar-icon {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: #fff;
+            margin: 3px 0;
+        }
+
+        /* Stili per i menu */
+        .navbar-menu {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .navbar-menu li {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        .navbar-menu li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        /* Stili per la media query */
+        @media screen and (max-width: 768px) {
+            .navbar-menu {
+                display: none;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .navbar-menu li {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+
+            .navbar-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-toggle">
+            <span class="navbar-icon"></span>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chi Siamo</a></li>
+            <li><a href="#">Contatti</a></li>
+        </ul>
+    </nav>
+    <script>
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navbarMenu = document.querySelector('.navbar-menu');
+
+        navbarToggle.addEventListener('click', () => {
+            navbarMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
