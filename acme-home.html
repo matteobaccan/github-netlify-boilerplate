@@ -22,7 +22,8 @@
 
   <div id="mainBody">
 
-    <div style="border:1px solid black; position:fixed; bottom:10px; right:10px; width:40px; border-radius:90px;" onclick="scrollToTop()">TOP
+    <div style="border:1px solid black; position:fixed; bottom:10px; right:10px; width:40px; border-radius:90px;"
+      onclick="scrollToTop()">TOP
     </div>
 
     <div style="height:180px;"></div>
@@ -98,32 +99,23 @@
     </div>
   </div>
 
-  <!--
-  <div style="border:1px solid black; position:static; left:200px; top:1050px; margin-bottom: 10px;">test 1.0</div>
-  <div style="position: sticky; top: 10px; background-color: green; border: 1px solid black; color:white; margin-bottom:10px;">test 5</div>
-  <div style="border:1px solid black; position:static; left:200px; top:1050px;">test 1.1</div>
-  <div style="border:1px solid black; position:relative; left:100px; top:100px; width:300px; height:2000px;">test 2</div>
-  <div style="border:1px solid black; position:fixed; bottom:10px; right:10px; width:100px;">test 3</div>
-  <div style="border:1px solid red; position:absolute; top:150px; left:10px; width:300px;">test 4</div>
--->
+  <script>
+    function mobile() {
+      var mainBody = document.getElementById('mainBody');
+      mainBody.setAttribute('style', 'margin:auto; width:500px;');
+    }
 
-<script>
-  function mobile() {
-    var mainBody = document.getElementById('mainBody');
-    mainBody.setAttribute('style', 'margin:auto; width:500px;');
-  }
-
-  function pc() {
-    var mainBody = document.getElementById('mainBody');
-    mainBody.setAttribute('style', 'margin:auto; width:100%;');
-  }
-  function scrollToTop() {
-     window.scrollTo(0, 0);
-  }
-  function red(){
-    document.getElementById("mainBody").style="background:red;";
-  }
-</script>
+    function pc() {
+      var mainBody = document.getElementById('mainBody');
+      mainBody.setAttribute('style', 'margin:auto; width:100%;');
+    }
+    function scrollToTop() {
+      window.scrollTo(0, 0);
+    }
+    function red() {
+      document.getElementById("mainBody").style = "background:red;";
+    }
+  </script>
 </body>
 
 </html>
