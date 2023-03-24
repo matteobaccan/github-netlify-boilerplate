@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu di navigazione responsive</title>
+    <style>
+      /* Stile per il menu di navigazione */
+      .menu {
+        display: flex;
+        flex-direction: column;
+        background-color: #333;
+        color: #fff;
+      }
+      
+      .menu a {
+        display: block;
+        padding: 16px;
+        text-decoration: none;
+        color: #fff;
+      }
+      
+      .menu a:hover {
+        background-color: #555;
+      }
+      
+      /* Stile per il pulsante di apertura del menu su dispositivi mobili */
+      .menu-icon {
+        display: none;
+      }
+      
+      @media screen and (max-width: 600px) {
+        .menu {
+          position: relative;
+        }
+        
+        .menu-icon {
+          display: block;
+          position: absolute;
+          top: 0;
+          right: 0;
+          padding: 16px;
+        }
+        
+        .menu-icon:hover {
+          background-color: #555;
+          cursor: pointer;
+        }
+        
+        .menu-list {
+          display: none;
+          position: absolute;
+          top: 100%;
+          right: 0;
+          background-color: #333;
+          width: 100%;
+          z-index: 1;
+        }
+        
+        .menu-list a {
+          display: block;
+          padding: 16px;
+          text-decoration: none;
+          color: #fff;
+        }
+        
+        .menu-list a:hover {
+          background-color: #555;
+        }
+        
+        .menu.open .menu-list {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Menu di navigazione -->
+    <nav class="menu">
+      <div class="menu-icon">&#9776;</div>
+      <ul class="menu-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Servizi</a></li>
+        <li><a href="#">Contatti</a></li>
+      </ul>
+    </nav>
+    
+    <!-- Script per aprire e chiudere il menu su dispositivi mobili -->
+    <script>
+      var menuIcon = document.querySelector('.menu-icon');
+      var menuList = document.querySelector('.menu-list');
+      var menu = document.querySelector('.menu');
+      
+      menuIcon.addEventListener('click', function() {
+        menu.classList.toggle('open');
+      });
+    </script>
+  </body>
+</html>
