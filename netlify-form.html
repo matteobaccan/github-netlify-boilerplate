@@ -15,21 +15,23 @@
     <form name="contatti" method="POST" data-netlify="true">
       <!-- form group   -->
       <div class="form-group">
-        <label for="nome">Nome e Cognome - ci serve per ricordarci il tuo nome</label>
-        <input type="text" name="nome" id="nome" class="form-control" placeholder="Inserisci il tuo nome">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" class="form-control" placeholder="Inserisci il tuo nome: ci aiuterà a ricordarci come ti chiami">
       </div>
       <!-- form group   -->
       <div class="form-group">
-        <label for="email">Email - ci servirà per risponderti</label>
-        <input type="email" name="email" id="email" class="form-control" placeholder="Inserisci la tua email">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="Inserisci la tua email: ci permetterà di risponderti">
       </div>
       <!-- form group   -->
       <div class="form-group">
-        <label for="messaggio">Inserisci il tuo commento</label>
+        <label for="messaggio">Commento</label>
         <textarea name="messaggio" id="messaggio" class="form-control"
-          placeholder="Inserisci il tuo messaggio"></textarea>
+          placeholder="Inserisci il motivo del tuo contatto"></textarea>
       </div>
       <br />
+      <div data-netlify-recaptcha="true"></div>
+      <br/>
       <div class="form-group">
         <button type="submit" class="btn btn-primary">Invia</button>
       </div>
