@@ -12,7 +12,8 @@
   <div class="container">
     <h1>Gestione delle form con Netlify</h1>
 
-    <form name="contatti" method="POST" data-netlify="true">
+    <form name="contatti" method="POST" data-netlify="true">      
+      <input type="hidden" name="subject" value="Nuovi dati ricevuti dalla form %{formName} (%{submissionId})" />
       <!-- form group   -->
       <div class="form-group">
         <label for="nome">Nome</label>
