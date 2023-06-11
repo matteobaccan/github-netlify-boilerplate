@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <!-- https://stackoverflow.com/questions/643879/css-to-make-html-page-footer-stay-at-bottom-of-the-page-with-a-minimum-height-b -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer sticky</title>
     <style>
         body {
-            min-height: 100vh;
             margin: 0;
 
+            /* Imposto la visualizzazione a griglia */
             display: grid;
+            /* Imposto l'altezza minima del contenitore a 100% della viewport */
+            min-height: 100vh;
+            /* Imposto la griglia a 3 righe: la prima e terza automatica, la centrale deve occupare tutto il restante spazio */
             grid-template-rows: auto 1fr auto;
         }
 
+        /**
+        * Definisco una dimensione e un colore per l'header e il footer
+        */
         header {
             min-height: 50px;
             background: lightcyan;
@@ -29,12 +37,12 @@
 <body>
     <header>Header</header>
     <div>
-        first<br/>
-        Content<br/>
-        Content<br/>
-        Content<br/>
-        Content<br/>
-        Content<br/>
+        first<br />
+        Content<br />
+        Content<br />
+        Content<br />
+        Content<br />
+        Content<br />
         last
     </div>
     <footer>Footer</footer>
