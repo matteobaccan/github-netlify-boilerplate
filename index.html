@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <title>Titolo della Pagina</title>
-</head>
-  
-<body>
-  <div style="background-color:red;">
-    <img src="https://via.placeholder.com/100x100">
-    <a href="#chisiamo">Chi siamo</a>
-    <a href="#dovesiamo">Dove siamo</a>
-  </div>
-  
-  <h1 id="chisiamo">Chi siamo</h1>
-  <p>Testo del paragrafo</p>
+  <head>
+    <meta charset="UTF-8">
+    <title>Titolo della Pagina</title>
+    <style>
+    .myheader {
+      background-color:red;
+    }
+    .mybody{
+      background-color:rgb(238, 189, 189);
+    }
+    .myfooter{
+      background-color:blue;
+    }
 
-  <h1 id="dovesiamo">Dove siamo</h1>
-  <p>Testo del paragrafo</p>
-  <img src="https://via.placeholder.com/400x200">
+  </style>
+  </head>
 
+  <body>
+    <div class="myheader">
+      <img src="https://via.placeholder.com/100x100">
+      <a href="#chisiamo">Chi siamo</a>
+      <a href="#dovesiamo">Dove siamo</a>
+    </div>
 
-  
-</body>
+    <div class="mybody">
+      <h1 id="chisiamo">Chi siamo</h1>
+      <p>Testo del paragrafo</p>
+
+      <h1 id="dovesiamo">Dove siamo</h1>
+      <p>Testo del paragrafo</p>
+      <img src="https://via.placeholder.com/400x200">
+    </div>
+
+    <div class="myfooter">
+      FOOTER
+    </div>
+
+  </body>
 </html>
