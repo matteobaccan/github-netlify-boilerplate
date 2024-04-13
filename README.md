@@ -13,15 +13,6 @@ Esempio di pubblicazione da GitHub a Netlify
 
 Il repository è pubblicato a questo indirizzo [https://github-netlify-boilerplate.netlify.app](https://github-netlify-boilerplate.netlify.app)
 
-## Pagine di riferimento
-
-- [Struttura minima](https://github-netlify-boilerplate.netlify.app/index.html) : index.html - esempio di pagina minima con header, corpo e footer.
-- [Footer fisso - footer-fisso-a-fondo-pagina.html](https://github-netlify-boilerplate.netlify.app/footer-fisso-a-fondo-pagina.html) : esempio di pagina con header, corpo variabile e footer posizionato a fondo pagina.
-- [Footer Sticky - footer-sticky.html](https://github-netlify-boilerplate.netlify.app/footer-sticky.html) : esempio di pagina con footer a fondo pagina o a fine testo nel caso che la grandezza di pagina sia superiore alle viewport.
-- [Nav responsive](https://github-netlify-boilerplate.netlify.app/nav-responsive.html) : esempio di Nav responsive
-- [Nav responsive con burger](https://github-netlify-boilerplate.netlify.app/nav-responsive2.html) : esempio di Nav responsive con burger e logo
-- La pagina di test per il corso di WebDesign 2022-2024 è pubblicata a questo indirizzo [https://github-netlify-boilerplate.netlify.app/acme-home.html](https://github-netlify-boilerplate.netlify.app/acme-home.html)
-
 ## Automazione
 
 Ogni modifica viene controllata appena inserita in repository tramite il [seguente workflow](https://github.com/matteobaccan/github-netlify-boilerplate/blob/main/.github/workflows/main.yml)
