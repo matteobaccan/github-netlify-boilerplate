@@ -24,7 +24,7 @@ Ogni modifica viene controllata appena inserita in repository tramite il [seguen
 [PageSpeed](https://pagespeed.web.dev/report?url=https%3A%2F%2Fgithub-netlify-boilerplate.netlify.app)
 [PageSpeed](https://pagespeed.web.dev/report?url=https%3A%2F%2Fgithub-netlify-boilerplate.vercel.app)
 
-[GTMetrix](https://gtmetrix.com/reports/github-netlify-boilerplate.netlify.app/6oLETqoh/)
+[GTMetrix](https://gtmetrix.com/reports/github-netlify-boilerplate.netlify.app/HMFhnoTV/?guest=1)
 
 ## Test seo
 
