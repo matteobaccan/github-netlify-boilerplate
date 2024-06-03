@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV responsive</title>
+    <style>
+        /* Facciamo in modo che non ci siano spaziature */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f6b1b1;
+            color: white;
+            cursor: pointer;
+        }
+
+        #popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #f6b1b1;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <span class="button" onclick="popup()">Clicca Qui</span>
+
+    <div id="popup" style="display: none;">
+        <!-- X di chiusura -->
+        <span style="float: right; cursor: pointer;" onclick="popup()">X</span>
+        <h1>Popup</h1>
+        <p>Questo è un popup</p>
+    </div>
+
+    <script>
+        function popup() {
+            var popup = document.getElementById("popup");
+            if (popup.style.display == "block") {
+                popup.style.display = "none";
+            } else {
+                popup.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

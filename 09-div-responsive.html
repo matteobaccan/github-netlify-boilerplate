@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIV responsive</title>
+    <style>
+        /* Facciamo in modo che non ci siano spaziature */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Stile della riga */
+        .riga {
+            outline: 2px solid red;
+        }
+
+        /* Stile delle colonna50 con occupazione del 50% dello spazio */
+        .colonna50 {
+            width: 50%;
+            float: left;
+            padding: 10px 5px;
+            outline: 2px solid green;
+            transition: all 5.0s;
+            background-color: lightgrey;
+        }
+
+        /* Media queries */
+        @media (max-width: 768px) {
+            .colonna50 {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="riga">
+        <div class="colonna50">Colonna 1</div>
+        <div class="colonna50">Colonna 2</div>
+    </div>
+</body>
+
+</html>
