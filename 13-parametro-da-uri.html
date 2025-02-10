@@ -9,20 +9,22 @@
 
 <body>
     Come parametro indicare = img=uno, img=due, img=tre
+    <br>
+    <img id="immagine" src="" alt="Immagine" />
     <script>
         // Prendo il parametro img da URI
         const urlParams = new URLSearchParams(window.location.search);
         const img = urlParams.get('img');
         // Metto un placeholder per l'immagine preso da via placeholder       
-        let imgUri = "https://placehold.co/600x400?text=default";
+        let imgUri = "https://placehold.co/300x400?text=default";
         if( img=="uno") {
-            imgUri = "https://placehold.co/600x400?text=uno";
+            imgUri = "https://placehold.co/300x400?text=uno";
         } else if( img=="due") {
-            imgUri = "https://placehold.co/600x400?text=due";
+            imgUri = "https://placehold.co/300x400?text=due";
         } else if( img=="tre") {
-            imgUri = "https://placehold.co/600x400?text=tre";
+            imgUri = "https://placehold.co/300x400?text=tre";
         }
-        document.write(`<img src="${imgUri}" alt="Immagine" />`);
+        document.getElementById("immagine").src = imgUri;
     </script>
 </body>
 
