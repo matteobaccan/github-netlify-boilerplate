@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parametro da URI</title>
+</head>
+
+<body>
+    <script>
+        // Prendo il parametro img da URI
+        const urlParams = new URLSearchParams(window.location.search);
+        const img = urlParams.get('img');
+        // Metto un placeholder per l'immagine preso da via placeholder       
+        let imgUri = "https://placehold.co/600x400?text=default";
+        if( img=="uno") {
+            imgUri = "https://placehold.co/600x400?text=uno";
+        } else if( img=="due") {
+            imgUri = "https://placehold.co/600x400?text=due";
+        } else if( img=="tre") {
+            imgUri = "https://placehold.co/600x400?text=tre";
+        }
+        document.write(`<img src="${imgUri}" alt="Immagine" />`);
+    </script>
+</body>
+
+</html>
