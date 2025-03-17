@@ -14,6 +14,7 @@ Esempio di pubblicazione da GitHub a Netlify
 Il repository è pubblicato a questo indirizzo 
 - Versione Netlify [https://github-netlify-boilerplate.netlify.app](https://github-netlify-boilerplate.netlify.app)
 - Versione Vercel [https://github-netlify-boilerplate.vercel.app](https://github-netlify-boilerplate.vercel.app)
+- Versione GitHub pages [https://matteobaccan.github.io/github-netlify-boilerplate/](https://matteobaccan.github.io/github-netlify-boilerplate/)
 
 ## Automazione
 
